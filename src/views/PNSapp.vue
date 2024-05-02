@@ -3670,9 +3670,9 @@ export default {
       this.PolyData.Textlength=this.radioarray;
       this.radioarray=[];
       await axios
-        .post("http://localhost:8083/api/items", this.SamData)
+        .post("https://pns-backend.onrender.com/api/items", this.SamData)
         .then((result) => {
-          axios.post("http://localhost:8083/api/items2",this.PolyData)
+          axios.post("https://pns-backend.onrender.com/api/items2",this.PolyData)
           .then((result) => {
           this.getdata();
         })
@@ -3691,7 +3691,7 @@ export default {
 ;      let realtimearray=[];
 realtimearray.push(this.realtime)
       await axios
-        .post("http://localhost:8083/api/items6", realtimearray)
+        .post("https://pns-backend.onrender.com/api/items6", realtimearray)
         .then((result) => {
           // this.getdata();
         })
@@ -3702,7 +3702,7 @@ realtimearray.push(this.realtime)
 
     async getdata() {
       axios
-        .get("http://localhost:8083/api/items")
+        .get("https://pns-backend.onrender.com/api/items")
         .then((result) => {
           let len = result.data.length - 1;
           this.ans = result.data[len].Sdata;

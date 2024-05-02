@@ -443,7 +443,7 @@ export default {
 
     async postdata() {
       await axios
-        .post("http://localhost:8083/api/items7", this.MainFinalString)
+        .post("https://pns-backend.onrender.com/api/items7", this.MainFinalString)
         .then((result) => {
           // 
           // this.getdata();
@@ -847,35 +847,24 @@ export default {
 
     async getdata() {
       axios
-        .get("http://localhost:8083/api/items2")
+        .get("https://pns-backend.onrender.com/api/items2")
         .then((result) => {
           this.resultdata = result.data;
           
         })
         .catch((err) => {
-          
+          console.log("error", err);
         });
-
-      // axios
-      // .get("http://localhost:8083/api/items6")
-      // .then((result) => {
-      //   this.realdata = result.data;
-      //   
-      // })
-      // .catch((err) => {
-      //   
-      // });
     },
 
     async admindata() {
       axios
-        .get("http://localhost:8083/api/items5")
+        .get("https://pns-backend.onrender.com/api/items5")
         .then((result) => {
           
 
           let alldata = result.data;
           this.CardData = result.data;
-          console.log(alldata);
           for (let i = 0; i < alldata.length; i++) {
             let obj = {
               title: alldata[i].sam[1],

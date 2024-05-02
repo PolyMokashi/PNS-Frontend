@@ -171,7 +171,7 @@ samdata.sam.push(this.Postuserdata1)
 
 this.SamFormData.FormD = this.samformdata;
     await axios
-        .post("http://localhost:8083/api/items5", samdata)
+        .post("hhttps://pns-backend.onrender.com/api/items5", samdata)
         .then(() => {
           location.reload();
         })
@@ -186,7 +186,7 @@ this.SamFormData.FormD = this.samformdata;
     },
     async admindata() {
       axios
-        .get("http://localhost:8083/api/items")
+        .get("https://pns-backend.onrender.com/api/items")
         .then((result) => {
           for (let i = 0; i < result.data.length; i++) {
             this.poly[i] = result.data[i].Sdata;
@@ -202,7 +202,7 @@ this.SamFormData.FormD = this.samformdata;
 
     async getdata() {
       axios
-        .get("http://localhost:8083/api/items2")
+        .get("https://pns-backend.onrender.com/api/items2")
         .then((result) => {
           this.userdataupdate = result.data;
         })
@@ -213,7 +213,7 @@ this.SamFormData.FormD = this.samformdata;
 
     async postdata() {
       await axios
-        .post("http://localhost:8083/api/items3", this.PolyData)
+        .post("https://pns-backend.onrender.com/api/items3", this.PolyData)
         .then(() => {
         })
         .catch((err) => {
@@ -222,7 +222,7 @@ this.SamFormData.FormD = this.samformdata;
     },
     async realdata() {
     await axios
-        .get("http://localhost:8083/api/items6")
+        .get("https://pns-backend.onrender.com/api/items6")
         .then((result) => {
           this.real = result.data;
         })

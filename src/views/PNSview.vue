@@ -158,7 +158,7 @@ export default {
 
     async admindata() {
       axios
-        .get("http://localhost:8083/api/items5")
+        .get("https://pns-backend.onrender.com/api/items5")
         .then((result) => {
 
           let alldata = result.data;

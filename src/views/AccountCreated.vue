@@ -150,7 +150,7 @@ this.getdata();
 methods:{
 async getdata() {
     axios
-      .get("http://localhost:8083/api/items5")
+      .get("https://pns-backend.onrender.com/api/items5")
       .then((result) => {
         let alldata = result.data;
         this.CardData = result.data;
@@ -172,7 +172,7 @@ async getdata() {
     },
     async admindata() {
       axios
-      .get("http://localhost:8083/api/items")
+      .get("https://pns-backend.onrender.com/api/items")
       .then((result) => {
       // let len = result.data[len] - 1;
         for(let i=0;i<result.data.length;i++)
