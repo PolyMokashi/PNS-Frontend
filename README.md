@@ -52,17 +52,8 @@ npm run lint
 
 ---
 
-## Contributing
-1. Fork the repository.
-2. Create a branch (`git checkout -b feature-branch`).
-3. Commit changes (`git commit -m 'Add feature'`).
-4. Push to the branch (`git push origin feature-branch`).
-5. Open a pull request.
-
----
-
 ## License
-This project is licensed under the **MIT License**.
+This project is licensed under a **Private License**. Viewing the code is allowed, but copying, modifying, distributing, or using it for commercial purposes is strictly prohibited.
 
 ---
 
